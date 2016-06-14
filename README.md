@@ -24,3 +24,8 @@ sparkline(data, canvas, {
 })
 ```
 
+## developing
+
+Write code in `index.es6`. Compile your changes with `babel index.es6 > index.js`. Test your results by running `npm run test` (ie `zuul --local --ui mocha-qunit -- test/index.js`). Add tests in `/test/index.js`.
+
+Currently the tests don't actually run real tests, they just append example graphs to the bottom of the test page for visual confirmation. We could potentially test things for real using [js-imagediff](https://github.com/HumbleSoftware/js-imagediff).
