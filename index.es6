@@ -2,10 +2,9 @@ import R from 'ramda'
 
 const log = console.log.bind(console)
 
+
 // [Number] -> CanvasRendering
-// 
-module.exports = (arr, canvasID, options) => {
-  let canvas = document.getElementById(canvasID)
+module.exports = (arr, canvas, options) => {
   if(!canvas.getContext) return
   canvas.width = 200
   canvas.height = 100

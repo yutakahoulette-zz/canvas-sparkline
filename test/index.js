@@ -12,7 +12,7 @@ function createCanvas(id) {
 
 test('it renders data with length smaller than 200', () => {
   let canvas = createCanvas('narrow')
-  sparkline([3, 7, 4, 2, 4, 6, 10, 1, 3], 'narrow')
+  sparkline([3, 7, 4, 2, 4, 6, 10, 1, 3], canvas)
 })
 
 test('it renders data with length 200', () => {
@@ -21,12 +21,12 @@ test('it renders data with length 200', () => {
     () => Math.round(Math.random() * 300)
   , R.range(0, 100)
   )
-  sparkline(ns, 'twoHundred')
+  sparkline(ns, canvas)
 })
 
 test('it renders data with length greater than 200', () => {
   let canvas = createCanvas('fourHundred')
   let ns = R.range(0, 400)
-  sparkline(ns, 'fourHundred')
+  sparkline(ns, canvas)
 })
 

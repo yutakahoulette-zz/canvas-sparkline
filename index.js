@@ -9,9 +9,7 @@ var _ramda2 = _interopRequireDefault(_ramda);
 var log = console.log.bind(console);
 
 // [Number] -> CanvasRendering
-//
-module.exports = function (arr, canvasID, options) {
-  var canvas = document.getElementById(canvasID);
+module.exports = function (arr, canvas, options) {
   if (!canvas.getContext) return;
   canvas.width = 200;
   canvas.height = 100;
