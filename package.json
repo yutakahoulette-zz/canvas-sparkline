@@ -1,7 +1,7 @@
 {
   "name": "canvas-sparkline",
   "version": "0.0.1",
-  "description": "Function that renders Sparkline graphs (mimimal/small line graph) with canvas",
+  "description": "Function that renders sparkline graphs (mimimal/small line graph) with canvas",
   "main": "index.js",
   "scripts": {
     "test": "zuul --local --ui mocha-qunit -- test/index.js",
