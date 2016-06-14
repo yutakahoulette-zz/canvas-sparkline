@@ -6,23 +6,19 @@ var _ramda = require('ramda');
 
 var _ramda2 = _interopRequireDefault(_ramda);
 
-var log = console.log.bind(console);
-
 // [Number] -> CanvasRendering
 module.exports = function (arr, canvas, options) {
   if (!canvas.getContext) return;
-  canvas.width = 200;
-  canvas.height = 100;
-
-  // take diff of arr len and 200
-  // divide 200 by diff
-
+  var _ref = [100, 50];
+  canvas.width = _ref[0];
+  canvas.height = _ref[1];
   var max = maxAll(arr);
   var min = minAll(arr);
   var len = arr.length;
-  var segmentLen = 200 / len;
+
+  var segmentLen = 100 / len;
   var scaled = _ramda2['default'].map(function (n) {
-    return 100 - n * 100 / max;
+    return 50 - n * 50 / max;
   }, arr);
 
   var ctx = canvas.getContext('2d');
@@ -30,7 +26,6 @@ module.exports = function (arr, canvas, options) {
   _ramda2['default'].addIndex(_ramda2['default'].map)(function (n, i) {
     return ctx.lineTo(i * segmentLen, n);
   }, scaled);
-
   ctx.stroke();
 
   return canvas;
