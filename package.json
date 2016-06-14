@@ -1,0 +1,33 @@
+{
+  "name": "canvas-sparkline",
+  "version": "0.0.1",
+  "description": "Function that renders Sparkline graphs (mimimal/small line graph) with canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "zuul --local --ui mocha-qunit -- test/index.js",
+    "build": "babel index.es6 > index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yutakahoulette/canvas-sparkline.git"
+  },
+  "keywords": [
+    "canvas",
+    "sparkline",
+    "graph"
+  ],
+  "author": "jay r bolton <jayrbolton@gmail.com> (http://jayrbolton.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yutakahoulette/canvas-sparkline/issues"
+  },
+  "homepage": "https://github.com/yutakahoulette/canvas-sparkline#readme",
+  "devDependencies": {
+    "babelify": "7.3.0",
+    "mocha": "2.5.3",
+    "zuul": "3.10.1"
+  },
+  "dependencies": {
+    "ramda": "0.21.0"
+  }
+}
