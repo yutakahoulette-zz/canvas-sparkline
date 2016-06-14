@@ -1,7 +1,7 @@
 import R from 'ramda'
 
 
-// [Number] -> CanvasRendering
+// ([Number], Canvas, Object) -> Canvas
 module.exports = (arr, canvas, options) => {
   if(!canvas.getContext) return
   [canvas.width, canvas.height] = [100, 50]
