@@ -3,6 +3,8 @@
 
 Draw a "sparkline" graph, which is a small and minimal line graph, often used to represent tweets, shares, stock values, etc, etc.
 
+> A sparkline is a small intense, simple, word-sized graphic with typographic resolution. Sparklines mean that graphics are no longer cartoonish special occasions with captions and boxes, but rather sparkline graphics can be everywhere a word or number can be: embedded in a sentence, table, headline, map, spreadsheet, graphic. Data graphics should have the resolution of typography. 
+
 http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR
 
 ```js
